@@ -45,6 +45,13 @@ canvas,
 svg {
     max-width: 100%;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
 
 // Variables Here
 $blackground-color: #0b134f;

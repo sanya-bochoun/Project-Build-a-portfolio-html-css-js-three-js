@@ -36,6 +36,15 @@ img, video, canvas, svg {
   max-width: 100%;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .loading {
   z-index: 99;
   background: #0b134f;
@@ -43,7 +52,7 @@ img, video, canvas, svg {
   width: 100%;
   height: 100vh;
   font-family: Orbitron, sans-serif;
-  display: grid;
+  display: none;
   position: fixed;
   inset: 0;
 }
@@ -167,5 +176,40 @@ img, video, canvas, svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.landing {
+  color: #fff;
+  background: #111;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing .header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing .header__wrap {
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  padding: 10px;
+  display: flex;
+}
+
+.landing .header__left {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.landing .header__left li {
+  font-size: 18px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
